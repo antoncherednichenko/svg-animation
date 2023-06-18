@@ -223,6 +223,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 15px;
 }
 
 .slide-11 .loader {
@@ -348,4 +349,11 @@
 
 .slide-32 div h2 {
     text-align: center;
+}
+
+.slide-22 .col {
+    width: 100%;
+}
+.slide-23 .col {
+    width: 100%;
 }
