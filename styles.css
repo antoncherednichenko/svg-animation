@@ -1,4 +1,17 @@
+@font-face {
+    font-family: 'vag_rounded_tlregular';
+    src: url('./assets/vag_rounded_tl-webfont.woff2') format('woff2'),
+         url('./assets/vag_rounded_tl-webfont.woff') format('woff');
+         url('./assets/VAG_Rounded_TL.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
 
+}
+
+.slide-1 {
+
+    font-family: 'vag_rounded_tlregular', Roboto, sans-serif;
+}
 
 .styled-slyde {
     width: 100%;
@@ -15,19 +28,28 @@
     width: 50%;
 }
 
+.title-text {
+    position:  relative;
+    z-index: 3;
+    right: 100px;
+    top: 70px;
+}
+
 .first_slide__column svg {
     height: auto;
     width: 230px;
     position: absolute;
     bottom: 0;
-    right: 25px;
+    left: 55px;
+    transform: scale(-1, 1);
+    z-index: 2;
 }
 
 .first_slide__title {
     font-size: 57px;
     line-height: 87px;
     color: #111;
-    margin-bottom: 65px;
+    margin-bottom: 25px;
 }
 
 .first_slide__description {
@@ -36,7 +58,7 @@
     line-height: 48px;
 }
 
-.first_slide__description .name {
+.first_slide__description .name .job {
     font-weight: 600;
 }
 .first_slide__description .logo {
@@ -61,6 +83,14 @@
     transform: rotate(140deg);
     z-index: 1;
     opacity: 0.3;
+}
+.first_slide .first_slide__buble_container img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    max-width: 450px;
+    /* transform: scale(-1, 1) */
 }
 
 .flex-end {
